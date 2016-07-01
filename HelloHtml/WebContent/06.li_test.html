@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<link rel="stylesheet" type="text/css" href="./css/reset.css">
+<style>
+ol, ul {
+	list-style: none
+}
+
+div.gallery {
+	width: 400px;
+	height: 60px;
+	background: red;
+	margin: 0 auto;
+}
+
+div.gallery>ul>li {
+	width: 100px;
+	height: 100%;
+	float: left
+}
+
+div.gallery>ul>li:NTH-CHILD(1) {
+	background: #000000;
+}
+
+div.gallery>ul>li:NTH-CHILD(2) {
+	background: #ffff00;
+}
+
+div.gallery>ul>li:NTH-CHILD(3) {
+	background: #ff00ff;
+}
+</style>
+</head>
+<body>
+	<div class="gallery">
+		<ul>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+		</ul>
+	</div>
+</body>
+</html>

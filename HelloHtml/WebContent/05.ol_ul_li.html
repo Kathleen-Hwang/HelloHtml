@@ -4,28 +4,51 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <style type="text/css">
+
 /* ul, li {
 	list-style: none
 } */
 div.gnb {
-	background: red;
+	background: aqua;
 	width: 500px;
 	height: 50px;
 }
 
 div.gnb>ul>li {
 	width: 100px;
-	height: 50px;
+	height: 50px; <!--
+	float: left;
+	-->
+}
+
+div.gnb>ul>li.s0 {
+	background: #ff0000;
+	float: left
+}
+
+div.gnb>ul>li.s1 {
+	background: #00ff00;
+	float: left
+}
+
+div.gnb>ul>li:nth-child(3) {
+	background: #ff00ff;
+	float: left
+}
+
+div.gnb>ul>li.s3 {
+	background: #ffff00;
+	float: left
 }
 </style>
 </head>
 <body>
 	<div class="gnb">
 		<ul>
-			<li>1</li>
-			<li>2</li>
-			<li>3</li>
-			<li>4</li>
+			<li class="s0">First</li>
+			<li class="s1">Second</li>
+			<li class="s2">Third</li>
+			<li class="s3">Fourth</li>
 		</ul>
 	</div>
 
