@@ -1,0 +1,31 @@
+@CHARSET "UTF-8";
+
+/* element selector */
+div {
+	width: 300px;
+	height: 300px;
+}
+
+/* id selector */
+#red {
+	background-color: #ff0000
+}
+
+/* class selector */
+.blue {
+	background-color: #0000ff
+}
+
+
+.roundblue {
+	border-radius: 50%;
+}
+
+div.box {
+	width: 200px;
+	height: 200px;
+}
+
+div.box.s1 {
+	background-color: #ff0000
+}
