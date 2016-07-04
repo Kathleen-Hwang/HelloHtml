@@ -1,0 +1,72 @@
+@CHARSET "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+.wrap {
+	width: 94%;
+	height: 94%;
+	background: red;
+	position: absolute;
+	top: 3%;
+	left: 3%;
+}
+
+.left_top {
+	width: 3%;
+	height: 3%;
+	background: yellow;
+	position: fixed;
+	top: 6%;
+	left: 6%
+}
+
+ul {
+	list-style: none;
+	position: fixed;
+	top: 13%;
+	left: 6%;
+}
+
+.left_bottom {
+	width: 3%;
+	height: 3%;
+	background: orange;
+	position: fixed;
+	left: 6%;
+	bottom: 6%;
+}
+
+.center_bottom {
+	width: 3%;
+	height: 3%;
+	background: green;
+	position: fixed;
+	left: 48%;
+	bottom: 6%;
+}
+
+.right_top {
+	width: 3%;
+	height: 3%;
+	background: blue;
+	position: fixed;
+	right: 6%;
+	top: 6%;
+}
+
+.right_bottom {
+	width: 3%;
+	height: 3%;
+	background: purple;
+	position: fixed;
+	right: 6%;
+	bottom: 6%;
+}
