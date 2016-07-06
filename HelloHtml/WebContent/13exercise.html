@@ -6,12 +6,24 @@
 <link rel="stylesheet" href="./css/reset.css" media="all" />
 <link rel="stylesheet" href="./css/13exercise.css" media="all" />
 </head>
+<script>
+	function go_google() {
+		alert("go goole~");
+		location.href = 'http://google.com';
+	}
+</script>
 <body>
 
 	<div class="wrap">
 		<div class="menu"></div>
-		<div class="s1"></div>
-		<div class="s2"></div>
+		<div class="s1">
+			<!-- <div class="s1txt" onClick="javascript:location.href='http://google.com'">TITLE</div> -->
+			<div class="s1txt" onClick="go_google()">TITLE</div>
+		</div>
+		<div class="section s2" style="background-color: #0f0">
+			<div class="s2line"></div>
+			<div class="s2txt">TEXT ~~</div>
+		</div>
 		<div class="s3"></div>
 		<div class="sub"></div>
 		<div class="s4"></div>
