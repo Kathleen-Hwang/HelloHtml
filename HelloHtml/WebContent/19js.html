@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	var num1 = 1;
+	var num2 = 2;
+	document.write(sum);
+	
+	
+	function fun1(num1, num2) {
+		alert(num1 + num2 + "~");
+	}
+	
+	function fun2() {
+		num1 = Number(prompt("input num1"));
+		num2 = Number(prompt("input num2"));
+
+		fun1(num1, num2);
+	}
+	
+	function fun3() {
+		for (var i = 2; i < 10; i++) {
+			for (var j = 1; j < 10; j++) {
+				document.write(i*j + "<br>");
+			}
+		}
+	}
+	
+</script>
+</head>
+<body>
+	<input type="button" onclick="fun1(1, 2)" value="invoking fun1"/>
+	<input type="button" onclick="fun2(1, 2)" value="invoking fun2"/>
+	<input type="button" onclick="fun3()" value="invoking fun3"/>
+</body>
+</html>

@@ -1,0 +1,12 @@
+@CHARSET "UTF-8";
+
+.box {
+	background: red;
+	width:500px;
+	height:500px;
+	transition: all 1s;
+}
+
+.box:hover {
+	background:blue;
+}
