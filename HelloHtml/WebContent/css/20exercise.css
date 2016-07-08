@@ -1,0 +1,65 @@
+@CHARSET "UTF-8";
+
+.left {
+	width: 30%;
+	height: 100%;
+	position: fixed;
+	background: black;
+	z-index: 10;
+}
+
+.right {
+	width: 70%;
+	height: 100%;
+	background: gray;
+	position: relative;
+	margin-left: 30%;
+}
+
+.section {
+	width: 100%;
+	height: 100%;
+}
+
+.s1 {
+	background: red;
+}
+
+.s2 {
+	background: orange;
+}
+
+.s3 {
+	background: yellow;
+}
+
+.s4 {
+	background: green;
+}
+
+.s5 {
+	background: blue;
+}
+
+.left>.menu {
+	background: grey;
+	width: 90%;
+	position: relative;
+	margin: 0 auto;
+	margin-top: 150px;
+}
+
+ul {
+	list-style: none;
+}
+
+.left>.menu>ul>li {
+	border: 2px black solid;
+	text-align: center;
+	color: yellow;
+}
+
+.left>.menu>ul>li:hover {
+	background: blue;
+	color: white;
+}
