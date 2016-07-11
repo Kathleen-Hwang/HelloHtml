@@ -1,0 +1,122 @@
+@CHARSET "UTF-8";
+
+.wrap {
+	width: 100%;
+	height: auto;
+}
+
+.header {
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	background: red;
+	z-index: 10;
+	box-shadow: 0 1px 10px #000
+}
+
+.logo {
+	background: white;
+	float: left;
+	width: 100px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+}
+
+.gnb {
+	width: 500px;
+	height: auto;
+	background: red;
+}
+
+.gnb>ul>li {
+	width: 100px;
+	height: 50px;
+	float: left;
+	background: red;
+	color: white;
+	text-align: center;
+	line-height: 50px;
+}
+
+.gnb>ul>li:hover {
+	background: white;
+	color: black;
+}
+
+.gnb>ul {
+	list-style: none;
+}
+
+.section {
+	width: 100%;
+	height: 500px;
+	position: relative;
+	border: 10px solid grey;
+	box-sizing: border-box;
+}
+
+.s0 {
+	background: red;
+	top: 50px;
+}
+
+.s1 {
+	background: blue;
+}
+
+.s2 {
+	background: aqua;
+}
+
+.s0 span {
+	display: block;
+}
+
+.s0 span.title {
+	color: white;
+	text-align: center;
+	background: red;
+}
+
+.s0 span.author {
+	text-align: center;
+}
+
+.s0 span.start {
+	background: black;
+	color: white;
+	width: 100px;
+	text-align: center;
+	line-height: 50px;
+	position: relative;
+	margin: 0 auto;
+	top: 50px;
+}
+
+.m_gnb {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+@media screen and (max-width: 280px) {
+	.gnb {
+		display: none;
+	}
+	.m_gnb {
+		display: block
+	}
+	.m_gnb:hover {
+		color: white;
+	}
+}
+
+@media screen and (min-width:280px) {
+	.gnb {
+		display: block;
+	}
+	.m_gnb {
+		display: none
+	}
+}
