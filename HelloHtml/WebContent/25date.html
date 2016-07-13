@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<div id="time" style="width: 300px; height: 300px"></div>
+	<script>
+		var seconds = 0;
+		function timer() {
+			seconds++;
+
+			var hours = parseInt(seconds / 3600);
+			var remainder = seconds - hours * 3600;
+			var mins = parseInt(remainder / 60);
+			remainder = remainder - mins * 60;
+			var secs = remainder;
+
+			document.getElementById("time").innerHTML = (seconds + " >> " + hours + " : " + mins
+					+ " : " + secs);
+		}
+
+		window.onload = function() {
+			setInterval(timer, 1000);
+		}
+	</script>
+</body>
+</html>
