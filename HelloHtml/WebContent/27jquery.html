@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="./css/reset.css" media="all" />
+</head>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+	$(document).ready(function() {
+		// 'url(path) norepeat'
+		var arrColors = [ 'red', 'orange', 'yellow', 'green', 'blue' ];
+		$('div.gnb>ul>li').click(function() {
+			var idx = $(this).index();
+
+			//alert(idx);
+
+			$('div.gallery').css({
+				'background' : arrColors[idx],
+				'width' : '100%',
+				'height' : '100%',
+			});
+
+		});
+	});
+</script>
+<body>
+	<div class="gnb">
+		<ul>
+			<li>menu1</li>
+			<li>menu2</li>
+			<li>menu3</li>
+			<li>menu4</li>
+			<li>menu5</li>
+		</ul>
+	</div>
+	<div class="gallery"></div>
+</body>
+</html>
