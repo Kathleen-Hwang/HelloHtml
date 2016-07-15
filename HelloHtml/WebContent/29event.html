@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<style>
+.box {
+	width: 300px;
+	height: 300px;
+	background: silver;
+	margin: 0 auto;
+}
+
+.innerBox {
+	width: 150px;
+	height: 30px;
+	background: red
+}
+</style>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('div.box').children().on({
+			mouseover : function() {
+				console.log("children-mouseover!");
+			},
+			mouseout : function() {
+				console.log("children-mouseout!");
+			},
+			click : function(e) {
+				alert("box children clicked!");
+				
+				e.stopPropagation();
+			}
+		});
+
+		$('div.box').mouseover(function() {
+			console.log("mouseover!");
+			$(this).css("background", "red")
+		});
+		$('div.box').mousedown(function() {
+			console.log("mousedown!");
+			$(this).css("background", "yellow")
+		});
+		$('div.box').mouseup(function() {
+			console.log("mouseup!");
+			$(this).css("background", "green")
+		});
+		$('div.box').click(function() {
+			console.log("click!");
+			alert("box clicked!");
+			$(this).css("background", "orange")
+		});
+		$('div.box').mouseenter(function() {
+			console.log("mouseenter!");
+			$(this).css("background", "blue")
+		});
+		$('div.box').mouseout(function() {
+			console.log("mouseout!");
+			$(this).css("background", "purple")
+		});
+		$('div.box').mouseleave(function() {
+			console.log("mouseleave!");
+			$(this).css("background", "aqua")
+		});
+
+	});
+</script>
+</head>
+<body>
+	<div class="box">
+		<div class="innerBox"></div>
+	</div>
+</body>
+</html>
