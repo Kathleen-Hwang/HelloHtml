@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="./css/reset.css" media="all" />
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+</head>
+<body>
+	<input type="button" value="yellow">
+
+	<div class="box" style="background: red; width: 300px; height: 300px"></div>
+	<script>
+		$("input").on("click", function() {
+
+			alert("type is ... " + $(this).attr("type"));
+
+			//$(this).attr("value", "blue");
+			
+			$('.box').css({'background':$(this).attr("value")});
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+@CHARSET "UTF-8";
+
+body {
+	overflow: hidden;
+}
+
+#wrap {
+	width: 300%;
+	height: 100%;
+	position: relative;
+}
+
+.section {
+	width: 33.3333%;
+	height: 100%;
+	float: left;
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: 100% 100%
+}
+
+.s1 {
+	background-image:
+		url("https://pixabay.com/static/uploads/photo/2016/07/07/16/46/roll-the-dice-1502706_960_720.jpg");
+}
+
+.s2 {
+	background-image:
+		url("https://pixabay.com/static/uploads/photo/2015/03/25/23/45/cube-689618_960_720.jpg");
+}
+
+.s3 {
+	background-image:
+		url("https://pixabay.com/static/uploads/photo/2014/09/12/10/10/cube-442544_960_720.jpg");
+}

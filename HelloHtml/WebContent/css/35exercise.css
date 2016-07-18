@@ -1,0 +1,15 @@
+@CHARSET "UTF-8";
+
+.content {
+	width: 1000px;
+	height: auto;
+	margin: 0 auto;
+}
+
+.content>ul>li {
+	width: 33.33%;
+	height: 300px;
+	float: left;
+	border: 1px solid #f00;
+	box-sizing: border-box
+}
