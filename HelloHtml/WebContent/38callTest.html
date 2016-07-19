@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+	var func;
+
+	$(document).ready(function() {
+		alert('1');
+		//test();
+		test3();
+
+		function test3() {
+			alert(3);
+		}
+
+		func = test3;
+	});
+
+	function test() {
+		alert(2);
+		func();
+	}
+</script>
+</head>
+<body>
+
+</body>
+</html>

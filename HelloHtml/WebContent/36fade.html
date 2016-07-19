@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<style>
+div.box {
+	width: 500px;
+	height: 400px;
+	margin: 0 auto;
+	border: 1px solid #f00;
+	position: relative
+}
+
+div.box>ul>li {
+	width: 500px;
+	height: 400px;
+	position: absolute
+}
+</style>
+<link rel="stylesheet" href="./css/reset.css" media="all" />
+</head>
+<body>
+
+	<button class="btn1">fadeIn</button>
+	<button class="btn1">fadeOut</button>
+	<button class="btn1">fadeToggle</button>
+
+	<button class="s1">0</button>
+	<button class="s1">1</button>
+	<button class="s1">2</button>
+
+	<div class="box">
+		<ul>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+		</ul>
+	</div>
+
+	<script>
+		var num = $('div.box>ul>li').size();
+		var bgcolor = [ 'red', 'blue', 'yellow' ];
+
+		for (i = 0; i < num; i++) {
+
+			$('div.box>ul>li').eq(i).css({
+				'background' : bgcolor[i]
+			});
+		}
+
+		$('button').on('click', function() {
+			var idx = $(this).index();
+
+			switch (idx) {
+			case 0:
+				$('div.box').fadeIn();
+				break;
+			case 1:
+				$('div.box').fadeOut();
+				break;
+			case 2:
+				$('div.box').fadeToggle();
+				break;
+			case 3:
+				$('div.box>ul>li').eq(0).fadeIn().siblings().fadeOut();
+				break;
+			case 4:
+				$('div.box>ul>li').eq(1).fadeIn().siblings().fadeOut();
+				break;
+			case 5:
+				$('div.box>ul>li').eq(2).fadeIn().siblings().fadeOut();
+				break;
+
+			}
+
+		});
+	</script>
+</body>
+</html>
