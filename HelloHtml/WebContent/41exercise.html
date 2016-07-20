@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="./css/reset.css" media="all" />
+<style>
+ul {
+	width: 100%;
+	height: 100%;
+	background: gray;
+}
+
+ul>li {
+	width: 300px;
+	height: 300px;
+	list-style: none;
+	float: left;
+}
+
+ul>li>img {
+	width: 100%;
+	height: 100%;
+}
+
+#popup {
+	width: 100%;
+	height: 100%;
+	display: none;
+	background: rgba(105, 105, 0, 0.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#popup>img {
+	width: 50%;
+	height: 50%;
+	position: absolute;
+	margin:0 auto;
+	/* width: 700px;
+	height: 600px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -350px;
+	margin-top: -300px; */
+}
+</style>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+	var imgUrl;
+
+	var func = function() {
+		$('ul>li>img').click(function() {
+			//alert($('ul>li>img').attr('src'));
+			imgUrl = $('ul>li>img').attr('src');
+			$('#popup').fadeIn(3000, "swing", function() {
+				alert(imgUrl);
+				$('#popup>img').attr('src', imgUrl)
+			});
+		});
+
+		/* 		$('#popup>img').on('load', function() {
+		 alert('loaded!');
+		 alert(-($(this).width() / 2));
+		 alert($(this).height() / 2);
+		 $(this).css({
+		 'margin-top' : -($(this).height() / 2),'margin-left' : -($(this).width() / 2), 'display':'inline-block' 
+		 });
+		 }); */
+	};
+	$(document).ready(func);
+</script>
+</head>
+<body>
+	<ul style="width: 100%; height: 100%; background: gray;">
+		<li><img
+			src="https://pixabay.com/static/uploads/photo/2016/07/05/16/53/leaf-1498985_960_720.jpg"
+			alt="" /></li>
+		<li><img
+			src="https://pixabay.com/static/uploads/photo/2014/04/07/14/46/leaf-318667_960_720.jpg"
+			alt="" /></li>
+		<li><img
+			src="https://pixabay.com/static/uploads/photo/2016/07/03/16/26/frog-1495034_960_720.jpg"
+			alt="" /></li>
+		<li><img
+			src="https://pixabay.com/static/uploads/photo/2016/07/05/16/53/leaf-1498985_960_720.jpg"
+			alt="" /></li>
+		<li><img
+			src="https://pixabay.com/static/uploads/photo/2014/04/07/14/46/leaf-318667_960_720.jpg"
+			alt="" /></li>
+		<li><img
+			src="https://pixabay.com/static/uploads/photo/2016/07/03/16/26/frog-1495034_960_720.jpg"
+			alt="" /></li>
+		<li><img
+			src="https://pixabay.com/static/uploads/photo/2016/07/05/16/53/leaf-1498985_960_720.jpg"
+			alt="" /></li>
+		<li><img
+			src="https://pixabay.com/static/uploads/photo/2014/04/07/14/46/leaf-318667_960_720.jpg"
+			alt="" /></li>
+		<li><img
+			src="https://pixabay.com/static/uploads/photo/2016/07/03/16/26/frog-1495034_960_720.jpg"
+			alt="" /></li>
+		<li><img
+			src="https://pixabay.com/static/uploads/photo/2016/07/05/16/53/leaf-1498985_960_720.jpg"
+			alt="" /></li>
+		<li><img
+			src="https://pixabay.com/static/uploads/photo/2014/04/07/14/46/leaf-318667_960_720.jpg"
+			alt="" /></li>
+		<li><img
+			src="https://pixabay.com/static/uploads/photo/2016/07/03/16/26/frog-1495034_960_720.jpg"
+			alt="" /></li>
+	</ul>
+
+	<div id="popup">
+		<img src="" alt="" />
+	</div>
+</body>
+</html>
